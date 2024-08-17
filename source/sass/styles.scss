@@ -3,32 +3,6 @@
 @use "sass:map";
 @use "sass:list";
 
-/* 
-### Primary
-
-- Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
-- Orange: hsl(34, 97%, 64%)
-- Blue: hsl(212, 86%, 64%)
-
-### Neutral
-
-- Very Dark Blue: hsl(234, 12%, 34%)
-- Grayish Blue: hsl(229, 6%, 66%)
-- Very Light Gray: hsl(0, 0%, 98%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Fonts
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 200, 400, 600
-*/
-
 /* #region Defaults */
 html {
   box-sizing: border-box;
@@ -36,19 +10,25 @@ html {
   height: 100%;
   width: 100%;
 
-  --white: hsl(0, 0%, 100%);
-  --cream: hsl(30, 38%, 92%);
-  --aurometal-saurus: hsl(228, 12%, 48%);
-  --deep-aquamarine: hsl(158, 36%, 37%);
-  --deep-aquamarine-hover: hsl(157, 43%, 18%);
-  --gunmetal: hsl(212, 21%, 14%);
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
 
-  --ff-head: "Fraunces", serif;
-  --ff-body: "Montserrat", sans-serif;
+  --ff-body: "Poppins", sans-serif;
 
-  --fz-1: calc(32 / 16 * 1rem);
-  --fz-2: calc(14 / 16 * 1rem);
-  --fz-3: calc(12 / 16 * 1rem);
+  --fw-extra-light:200;
+  --fw-regular:400;
+  --fw-semi-bold:600;
+
+  --fz-1: calc(36 / 16 * 1rem);
+  --fz-2: calc(24 / 16 * 1rem);
+  --fz-3: calc(20 / 16 * 1rem);
+  --fz-4: calc(15 / 16 * 1rem);
+  --fz-5: calc(13 / 16 * 1rem);
 
   --s-500: calc(40 / 16 * 1rem);
   --s-300: calc(24 / 16 * 1rem);
@@ -67,7 +47,8 @@ body {
   height: inherit;
   font-optical-sizing: auto;
   font-family: var(--ff-body);
-  background-color: var(--cream);
+  font-size: var(--fz-4);
+  background-color: var(--very-light-gray);
 }
 
 .attribution {
@@ -77,17 +58,17 @@ body {
   bottom: 1rem;
   font-size: rem(11px);
   text-align: center;
-  color: var(--aurometal-saurus);
+  color: var(--very-dark-blue);
 }
 
 .attribution a {
   transition: .4s;
-  color: var(--gunmetal);
+  color: var(--blue);
 }
 
 .attribution a:hover,
 .attribution a:visited {
-  color: var(--deep-aquamarine);
+  color: var(--cyan);
   text-decoration: none;
 }
 /* #endregion Defaults */
