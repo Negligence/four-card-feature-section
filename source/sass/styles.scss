@@ -29,13 +29,6 @@ html {
   --fz-3: calc(20 / 16 * 1rem);
   --fz-4: calc(15 / 16 * 1rem);
   --fz-5: calc(13 / 16 * 1rem);
-
-  --s-500: calc(40 / 16 * 1rem);
-  --s-300: calc(24 / 16 * 1rem);
-  --s-200: calc(16 / 16 * 1rem);
-  --s-150: calc(12 / 16 * 1rem);
-  --s-100: calc(8 / 16 * 1rem);
-  --s-50: calc(4 / 16 * 1rem);
 }
 
 *,*::before,*::after {box-sizing: inherit;}
@@ -74,7 +67,7 @@ body {
 
 main {
   width: inherit;
-  height: inherit;
+  height: auto;
   display: grid;
   place-content: center;
 }
@@ -87,14 +80,22 @@ main {
 /* #endregion Reusable CSS */
 
 /* #region Mobile 375px */
+h1, h2 {
+  color: var(--very-dark-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
 #feature {
   padding: rem(32px);
+  row-gap: rem(75px);
 }
 
 .heading__container {
   width: rem(311px);
   row-gap: rem(16px);
-  color: var(--very-dark-blue);
   text-align: center;
 }
 
@@ -111,10 +112,39 @@ main {
 }
 
 .heading__description {
-  color: var(--grayish-blue);
   font-size: var(--fz-4);
   letter-spacing: rem(0.1px);
   line-height: em(25px, 15px);
+}
+
+.cards__container {
+  row-gap: rem(25px);
+}
+
+.card {
+  width: rem(311px);
+  height: rem(222px);
+  padding: rem(28px);
+  background-color: white;
+  border-radius: rem(8px);
+  box-shadow: 0 rem(15px) rem(30px) rem(-11px) #83a7d280;
+}
+
+.card__title {
+  font-size: rem(20px);
+  line-height: auto;
+}
+
+.card__description {
+  font-size: rem(13px);
+  line-height: em(23px, 13px);
+  letter-spacing: rem(0.09px);
+}
+
+.card__img {
+  width: rem(57px);
+  height: rem(57px);
+  place-self: end;
 }
 /* #endregion Mobile 375px */
 

@@ -20,12 +20,6 @@ html {
   --fz-3: calc(20 / 16 * 1rem);
   --fz-4: calc(15 / 16 * 1rem);
   --fz-5: calc(13 / 16 * 1rem);
-  --s-500: calc(40 / 16 * 1rem);
-  --s-300: calc(24 / 16 * 1rem);
-  --s-200: calc(16 / 16 * 1rem);
-  --s-150: calc(12 / 16 * 1rem);
-  --s-100: calc(8 / 16 * 1rem);
-  --s-50: calc(4 / 16 * 1rem);
 }
 
 *, *::before, *::after {
@@ -68,7 +62,7 @@ body {
 
 main {
   width: inherit;
-  height: inherit;
+  height: auto;
   display: grid;
   place-content: center;
 }
@@ -81,14 +75,22 @@ main {
 
 /* #endregion Reusable CSS */
 /* #region Mobile 375px */
+h1, h2 {
+  color: var(--very-dark-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
 #feature {
   padding: 2rem;
+  row-gap: 4.6875rem;
 }
 
 .heading__container {
   width: 19.4375rem;
   row-gap: 1rem;
-  color: var(--very-dark-blue);
   text-align: center;
 }
 
@@ -105,10 +107,39 @@ main {
 }
 
 .heading__description {
-  color: var(--grayish-blue);
   font-size: var(--fz-4);
   letter-spacing: 0.00625rem;
   line-height: 1.6666666667em;
+}
+
+.cards__container {
+  row-gap: 1.5625rem;
+}
+
+.card {
+  width: 19.4375rem;
+  height: 13.875rem;
+  padding: 1.75rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 167, 210, 0.5019607843);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  line-height: auto;
+}
+
+.card__description {
+  font-size: 0.8125rem;
+  line-height: 1.7692307692em;
+  letter-spacing: 0.005625rem;
+}
+
+.card__img {
+  width: 3.5625rem;
+  height: 3.5625rem;
+  place-self: end;
 }
 
 /* #endregion Mobile 375px */
