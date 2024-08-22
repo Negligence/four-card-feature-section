@@ -132,7 +132,7 @@ p {
 }
 
 .card__title {
-  font-size: rem(20px);
+  font-size: var(--fz-3);
   line-height: auto;
 }
 
@@ -156,14 +156,112 @@ p {
 
 /* #region Extra Small 320px */
 @include desktop-media-query(374px) {
- 
+  #feature {
+    padding: rem(32px) rem(10px);
+    row-gap: rem(35px);
+    justify-items: center;
+  }
+  
+  .heading__container {
+    width: rem(280px);
+  }
+  
+  .heading__title {
+    font-size: var(--fz-3);
+  }
+  
+  .heading__description {
+    font-size: var(--fz-5);
+  }
+  
+  .card {
+    width: rem(270px);
+    height: rem(202px);
+  }
+  
+  .card__img {
+    width: rem(47px);
+    height: rem(47px);
+  }
 }
 /* #endregion Extra Small 320px */
 
-/* #region Desktop 768px */
-@include mobile-media-query(1440px) {
+/* #region Desktop 1150px */
+@include mobile-media-query(1150px) {
  .attribution {
     position: fixed;
  }
+
+ #feature {
+    // padding: rem(32px);
+    // row-gap: rem(75px);
+  }
+
+  .heading__container {
+    // width: rem(311px);
+    // row-gap: rem(16px);
+    // text-align: center;
+  }
+
+  .heading__title {
+    // row-gap: rem(1px);
+    // letter-spacing: rem(0.17px);
+    // font-weight: var(--fw-extra-light);
+    // font-size: var(--fz-2);
+    // line-height: auto;
+  }
+
+  .heading__title-tagline {
+    // font-weight: var(--fw-semi-bold);
+  }
+
+  .heading__description {
+    // font-size: var(--fz-4);
+    // letter-spacing: rem(0.1px);
+    // line-height: em(25px, 15px);
+  }
+
+  .cards__container {
+    // row-gap: rem(25px);
+    grid: 
+    "    .    t    .    "
+    "    s    t    c    "
+    "    s    k    c    "
+    "    .    k    .    "
+    ;
+  }
+
+  .card {
+    // width: rem(311px);
+    // height: rem(222px);
+    // padding: rem(28px);
+    // background-color: white;
+    // border-radius: rem(4px) rem(4px) rem(8px) rem(8px);
+    // box-shadow: 0 rem(15px) rem(30px) rem(-11px) #83a7d280;
+    // grid-template-rows: repeat(2, auto) 1fr;
+    // border-top: rem(3.55px) solid;
+  }
+  
+  .card__title {
+    // font-size: var(--fz-3);
+    // line-height: auto;
+  }
+  
+  .card__description {
+    // font-size: rem(13px);
+    // line-height: em(23px, 13px);
+    // letter-spacing: rem(0.09px);
+  }
+  
+  .card__img {
+    // width: rem(57px);
+    // height: rem(57px);
+    // place-self: end;
+  }
+  
+  .supervisor__card {grid-area: s;}
+  .team__card {grid-area: t;}
+  .karma__card {grid-area: k;}
+  .calculator__card {grid-area: c;}
 }
-/* #endregion Desktop 768px */
+/* #endregion Desktop 1150px */
