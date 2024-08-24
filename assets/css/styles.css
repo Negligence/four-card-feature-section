@@ -83,7 +83,8 @@ p {
 }
 
 #feature {
-  padding: 2rem;
+  justify-items: center;
+  padding: 5.3125rem 2rem;
   row-gap: 4.6875rem;
 }
 
@@ -163,9 +164,8 @@ p {
 /* #region Extra Small 320px */
 @media only screen and (max-width: 23.375em) {
   #feature {
-    padding: 2rem 0.625rem;
+    padding: 5.3125rem 0.625rem;
     row-gap: 2.1875rem;
-    justify-items: center;
   }
   .heading__container {
     width: 17.5rem;
@@ -191,7 +191,20 @@ p {
   .attribution {
     position: fixed;
   }
+  #feature {
+    padding: 5rem 2rem;
+    row-gap: 4rem;
+  }
+  .heading__container {
+    width: 33.75rem;
+  }
+  .heading__title {
+    row-gap: -0.1875rem;
+    letter-spacing: 0.015625rem;
+    font-size: var(--fz-1);
+  }
   .cards__container {
+    gap: 1.875rem;
     grid: "    .    t    .    " "    s    t    c    " "    s    k    c    " "    .    k    .    ";
   }
   .supervisor__card {

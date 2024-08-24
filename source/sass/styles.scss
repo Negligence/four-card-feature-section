@@ -88,7 +88,8 @@ p {
 }
 
 #feature {
-  padding: rem(32px);
+  justify-items: center;
+  padding: rem(85px) rem(32px);
   row-gap: rem(75px);
 }
 
@@ -157,9 +158,8 @@ p {
 /* #region Extra Small 320px */
 @include desktop-media-query(374px) {
   #feature {
-    padding: rem(32px) rem(10px);
+    padding: rem(85px) rem(10px);
     row-gap: rem(35px);
-    justify-items: center;
   }
   
   .heading__container {
@@ -193,36 +193,22 @@ p {
  }
 
  #feature {
-    // padding: rem(32px);
-    // row-gap: rem(75px);
+    padding: rem(80px) rem(32px);
+    row-gap: rem(64px);
   }
 
   .heading__container {
-    // width: rem(311px);
-    // row-gap: rem(16px);
-    // text-align: center;
+    width: rem(540px);
   }
 
   .heading__title {
-    // row-gap: rem(1px);
-    // letter-spacing: rem(0.17px);
-    // font-weight: var(--fw-extra-light);
-    // font-size: var(--fz-2);
-    // line-height: auto;
-  }
-
-  .heading__title-tagline {
-    // font-weight: var(--fw-semi-bold);
-  }
-
-  .heading__description {
-    // font-size: var(--fz-4);
-    // letter-spacing: rem(0.1px);
-    // line-height: em(25px, 15px);
+    row-gap: rem(-3px);
+    letter-spacing: rem(0.25px);
+    font-size: var(--fz-1);
   }
 
   .cards__container {
-    // row-gap: rem(25px);
+    gap: rem(30px);
     grid: 
     "    .    t    .    "
     "    s    t    c    "
