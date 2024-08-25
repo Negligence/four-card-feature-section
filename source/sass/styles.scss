@@ -89,7 +89,7 @@ p {
 
 #feature {
   justify-items: center;
-  padding: rem(85px) rem(32px);
+  padding: rem(85px) rem(20px) rem(74px);
   row-gap: rem(75px);
 }
 
@@ -188,12 +188,12 @@ p {
 
 /* #region Desktop 1150px */
 @include mobile-media-query(1150px) {
- .attribution {
+  .attribution {
     position: fixed;
- }
+  }
 
- #feature {
-    padding: rem(80px) rem(32px);
+  #feature {
+    padding: rem(80px) rem(32px) rem(70px);
     row-gap: rem(64px);
   }
 
@@ -218,31 +218,16 @@ p {
   }
 
   .card {
-    // width: rem(311px);
-    // height: rem(222px);
-    // padding: rem(28px);
-    // background-color: white;
-    // border-radius: rem(4px) rem(4px) rem(8px) rem(8px);
-    // box-shadow: 0 rem(15px) rem(30px) rem(-11px) #83a7d280;
-    // grid-template-rows: repeat(2, auto) 1fr;
-    // border-top: rem(3.55px) solid;
-  }
-  
-  .card__title {
-    // font-size: var(--fz-3);
-    // line-height: auto;
-  }
-  
-  .card__description {
-    // font-size: rem(13px);
-    // line-height: em(23px, 13px);
-    // letter-spacing: rem(0.09px);
+    width: rem(350px);
+    height: rem(250px);
+    padding: rem(32px);
+    border-top-width: rem(4px);
+    row-gap: rem(6px);
   }
   
   .card__img {
-    // width: rem(57px);
-    // height: rem(57px);
-    // place-self: end;
+    width: initial;
+    height: initial;
   }
   
   .supervisor__card {grid-area: s;}

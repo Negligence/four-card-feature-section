@@ -70,13 +70,62 @@ The designs were created to the following widths:
 I learned to tweak and rename the design containers in figma to make it easier to translate it to html code structure.
 
 ```html
+<section class="grid" id="feature">
 
+  <div class="heading__container grid">
+
+    <h1 class="heading__title grid">
+      Reliable, efficient delivery
+      <strong class="heading__title-tagline">Powered by Technology</strong>
+    </h1>
+    
+    <p class="heading__description">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+
+  </div>
+
+  <div class="cards__container grid">
+
+    <article class="supervisor__card card grid">
+      <h2 class="card__title">Supervisor</h2>
+      <p class="card__description">Monitors activity to identify project roadblocks</p>
+      <img class="card__img" src="./assets/images/icon-supervisor.svg" alt="Magnifying Glass icon">
+    </article>
+    
+    <article class="team__card card grid">
+      <h2 class="card__title">Team Builder</h2>
+      <p class="card__description">Scans our talent network to create the optimal team for your project</p>
+      <img class="card__img" src="./assets/images/icon-team-builder.svg" alt="Team Builder Icon">
+    </article>
+
+    <article class="karma__card card grid">
+      <h2 class="card__title">Karma</h2>
+      <p class="card__description">Regularly evaluates our talent to ensure quality</p>
+      <img class="card__img" src="./assets/images/icon-karma.svg" alt="Light bulb Icon">
+    </article>
+    
+    <article class="calculator__card card grid">
+      <h2 class="card__title">Calculator</h2>
+      <p class="card__description">Uses data from past projects to provide better delivery estimates</p>
+      <img class="card__img" src="./assets/images/icon-calculator.svg" alt="Calculator Icon">
+    </article>
+
+  </div>
+  
+</section>
 ```
 
-I also found it handy to create classes based on the figma design local styles.
+I found very enjoyable to create a shifting layout using the ```grid``` property.
 
 ```scss
-
+.cards__container {
+  gap: rem(30px);
+  grid: 
+  "    .    t    .    "
+  "    s    t    c    "
+  "    s    k    c    "
+  "    .    k    .    "
+  ;
+}
 ```
 
 ### Continued development
@@ -137,12 +186,12 @@ They take in a pixel values as an argument then converts it to em values.
 ```mobile-media-query()```
 
 ```css
-@include mobile-media-query(1440px) {
+@include mobile-media-query(1150px) {
 
 }
 ```
 ```css
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 71.875em) {
 
 }
 ```
