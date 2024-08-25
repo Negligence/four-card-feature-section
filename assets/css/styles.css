@@ -84,7 +84,7 @@ p {
 
 #feature {
   justify-items: center;
-  padding: 5.3125rem 1.25rem 4.625rem;
+  padding: 5.3125rem 1.25rem;
   row-gap: 4.6875rem;
 }
 
@@ -192,7 +192,7 @@ p {
     position: fixed;
   }
   #feature {
-    padding: 5rem 2rem 4.375rem;
+    padding: 5rem 2rem;
     row-gap: 4rem;
   }
   .heading__container {
