@@ -95,11 +95,10 @@ p {
 }
 
 .heading__title {
-  row-gap: 0.0625rem;
   letter-spacing: 0.010625rem;
   font-weight: var(--fw-extra-light);
   font-size: var(--fz-2);
-  line-height: auto;
+  line-height: 1;
 }
 
 .heading__title-tagline {

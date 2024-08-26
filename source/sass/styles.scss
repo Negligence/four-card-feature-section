@@ -100,11 +100,10 @@ p {
 }
 
 .heading__title {
-  row-gap: rem(1px);
   letter-spacing: rem(0.17px);
   font-weight: var(--fw-extra-light);
   font-size: var(--fz-2);
-  line-height: auto;
+  line-height: 1;
 }
 
 .heading__title-tagline {
