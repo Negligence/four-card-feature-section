@@ -126,10 +126,19 @@ p {
   height: rem(222px);
   padding: rem(28px);
   background-color: white;
-  border-radius: rem(4px) rem(4px) rem(8px) rem(8px);
+  border-radius: rem(8px);
   box-shadow: 0 rem(15px) rem(30px) rem(-11px) #83a7d280;
   grid-template-rows: repeat(2, auto) 1fr;
-  border-top: rem(3.55px) solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  width: 100%;
+  height: rem(3.55px);
+  position: absolute;
+  top: 0;
 }
 
 .card__title {
@@ -149,10 +158,10 @@ p {
   place-self: end;
 }
 
-.supervisor__card {border-top-color: var(--cyan);}
-.team__card {border-top-color: var(--red);}
-.karma__card {border-top-color: var(--orange);}
-.calculator__card {border-top-color: var(--blue);}
+.supervisor__card::before {background-color: var(--cyan);}
+.team__card::before {background-color: var(--red);}
+.karma__card::before {background-color: var(--orange);}
+.calculator__card::before {background-color: var(--blue);}
 /* #endregion Mobile 375px */
 
 /* #region Extra Small 320px */
@@ -221,8 +230,11 @@ p {
     width: rem(350px);
     height: rem(250px);
     padding: rem(32px);
-    border-top-width: rem(4px);
     row-gap: rem(6px);
+  }
+
+  .card::before {
+    height: rem(4px);
   }
   
   .card__img {
