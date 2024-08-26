@@ -98,7 +98,7 @@ p {
   letter-spacing: 0.010625rem;
   font-weight: var(--fw-extra-light);
   font-size: var(--fz-2);
-  line-height: 1;
+  line-height: auto;
 }
 
 .heading__title-tagline {
@@ -211,7 +211,7 @@ p {
     font-size: var(--fz-1);
   }
   .heading__title-tagline {
-    margin-top: -8px;
+    margin-top: -0.5rem;
   }
   .cards__container {
     gap: 1.875rem;
