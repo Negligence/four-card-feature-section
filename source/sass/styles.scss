@@ -211,9 +211,12 @@ p {
   }
 
   .heading__title {
-    row-gap: rem(-3px);
     letter-spacing: rem(0.25px);
     font-size: var(--fz-1);
+  }
+
+  .heading__title-tagline {
+    margin-top: -3px;
   }
 
   .cards__container {

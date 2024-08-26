@@ -208,9 +208,11 @@ p {
     width: 33.75rem;
   }
   .heading__title {
-    row-gap: -0.1875rem;
     letter-spacing: 0.015625rem;
     font-size: var(--fz-1);
+  }
+  .heading__title-tagline {
+    margin-top: -3px;
   }
   .cards__container {
     gap: 1.875rem;
